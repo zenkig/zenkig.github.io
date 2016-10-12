@@ -129,17 +129,20 @@ PAGE:PORTFOLIO
 
 }
 
+#travelling {
+  color: #bdc3c7;
+}
+
 /********************
 PAGE:ABOUT
 ********************/
+
 .profile-photo {
 	display: block;
 	max-width: 200px;
 	margin: 0 auto 30px;
 	border-radius: 100%;
 }
-
-
 
 /********************
 PAGE:PORTFOLIO
@@ -179,27 +182,27 @@ COLOR
 
 /* site body*/
 body{
-	background-color: #fff;
-	color: #999;
+	background-color: #f7f8fa;
+	color: #67758a;
 }
 
 header {
 
-FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#b8c4cb,endColorStr=red); /*IE 6 7 8*/ 
+FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#b8c4cb, endColorStr=red); /*IE 6 7 8*/ 
 
-background: -ms-linear-gradient(top, #1eaaf1, #2b98f0);        /* IE 10 */
+background: -ms-linear-gradient(top, #a8d3e3, #a8d3f0);        /* IE 10 */
 
-background:-moz-linear-gradient(top,#b8c4cb,#f6f6f8);/*火狐*/ 
+background:-moz-linear-gradient(top,#a8d3e3,#a8d3f0);/*火狐*/ 
 
-background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#1eaaf1), to(#2b98f0));/*谷歌*/ 
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#a8d3e3), to(#a8d3f0));/*谷歌*/ 
 
-background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1eaaf1), to(#2b98f0));      /* Safari 4-5, Chrome 1-9*/
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a8d3e3), to(#a8d3f0));      /* Safari 4-5, Chrome 1-9*/
 
-background: -webkit-linear-gradient(top, #1eaaf1, #2b98f0);   /*Safari5.1 Chrome 10+*/
+background: -webkit-linear-gradient(top, #a8d3e3, #a8d3f0);   /*Safari5.1 Chrome 10+*/
 
-background: -o-linear-gradient(top, #fff, #0000ff);  /*Opera 11.10+*/
+background: -o-linear-gradient(top, #a8d3e3, #a8d3f0);  /*Opera 11.10+*/
 
-border-color: #009AFF;
+border-color: #bbbbbb;
 
 }
 
@@ -213,7 +216,7 @@ h1, h2 {
 
 /* links */
 a {
-	color: #009AFF;
+	color: #f4a4b2;
 }
 
 /*h1 {
@@ -226,11 +229,11 @@ h2 {
 
 
 nav a:visited {
-  color: #fff;
+  color: #bbbbbb;
 }
 
 nav a.selected, nav a:hover {
-  color:#FF9600;
+  color:#f4a4b2;
 
 }
 
