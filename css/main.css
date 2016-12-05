@@ -83,7 +83,7 @@ nav a {
 	font-weight: 800;
 	padding: 15px 10px ;
 }
-  
+
 /********************
 FOOTER
 ********************/
@@ -94,13 +94,20 @@ font-size:0.75em;
 text-align:center;
 clear: both;
 padding-top: 50px;
-color: #ccc;	
+color: #ccc;
 }
 
 .social-icon {
 	width: 20px;
 	height: 20px;
 	margin: 0 5px;
+}
+
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
 }
 
 /********************
@@ -111,7 +118,7 @@ PAGE:PORTFOLIO
 	/*margin: 0;
 	padding: 0;*/
 	list-style: none;
-	
+
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -276,4 +283,45 @@ nav a.selected, nav a:hover {
     /* 在小屏幕下, 我们没有足够空间行排列，但我们可以换成列排列 */
     flex-direction: column;
   }
-}	
+}
+
+
+/** 覆盖层 Light BOX **/
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100vw;
+  height:100vh;
+  /*position:absolute; */
+  position:fixed;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+#overlay img {
+ margin-top: 8%;
+ height: 85vh;
+}
+
+#overlay p {
+ color:white;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row,
+  .footer-inner{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+}
