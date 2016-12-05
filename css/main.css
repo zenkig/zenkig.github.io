@@ -83,7 +83,7 @@ nav a {
 	font-weight: 800;
 	padding: 15px 10px ;
 }
-
+  
 /********************
 FOOTER
 ********************/
@@ -108,13 +108,17 @@ PAGE:PORTFOLIO
 ********************/
 
 #gallery {
-	margin: 0;
-	padding: 0;
+	/*margin: 0;
+	padding: 0;*/
 	list-style: none;
+	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 #gallery li {
-	float: left;
+	/*float: left;*/
 	width: 45%;
 	margin: 2.5%;
 	background-color: #f5f5f5;
@@ -132,6 +136,8 @@ PAGE:PORTFOLIO
 #travelling {
   color: #bdc3c7;
 }
+
+
 
 /********************
 PAGE:ABOUT
@@ -248,3 +254,26 @@ nav a.selected, nav a:hover {
 
 }
 
+/* Large */
+#gallery li{
+  display: flex;
+  flex-flow: row wrap;
+  /* 所有列面向主轴终点位置靠齐 */
+  justify-content: flex-end;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+ #gallery li{
+    /* 当在中等屏幕中, 导航项目居中显示，并且剩余空间平均分布在列表之间 */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+ #gallery li{
+    /* 在小屏幕下, 我们没有足够空间行排列，但我们可以换成列排列 */
+    flex-direction: column;
+  }
+}	
