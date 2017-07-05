@@ -275,6 +275,8 @@ nav a.selected, nav a:hover {
 @media all and (max-width: 800px) {
   #gallery li {
     justify-content: space-around;
+    /*justify-content: flex-end;*/
+
   }
 }
 
@@ -286,7 +288,7 @@ nav a.selected, nav a:hover {
     display: flex;
     flex-direction: column;
     /*position: relative;*/
-    justify-content: space-around;
+    justify-content: flex-end;
     width: 100%;
   }
 }
