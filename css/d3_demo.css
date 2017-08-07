@@ -1,0 +1,54 @@
+body {
+    background: #fff;
+    color: #757575;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.navbar {
+    min-height: 60px;
+}
+
+.navbar-inverse {
+    background-image: none;
+    background-color: #1c262f;
+    border-color: #1c262f;
+}
+
+.logo {
+    max-width: 207px;
+    max-height: 50px;
+}
+
+.main {
+    margin-bottom: 24px;
+}
+
+.main-title {
+    text-align: center;
+}
+
+nav.social {
+    clear: both;
+    padding-top: 24px;
+}
+
+nav.social ul.social_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.social ul.social_links li {
+  display: inline-block;
+}
+
+nav.social ul.social_links li a {
+  display: block;
+  width: 22.5px;
+  height: 22.5px;
+  margin-right: 18px;
+  line-height: 0;
+  opacity: .6;
+  transition: opacity .3s ease;
+}

@@ -9,7 +9,7 @@ body{
 }
 
 #wrapper {
-	max-width: 940px;
+	max-width: 100vw;  /*940px*/
 	margin: 0 auto;
 	padding:0 5%;
 	/*background: orange;*/
@@ -21,6 +21,7 @@ a {
 
 img {
     max-width: 100%;
+    /*width: calc((100% - 10px)/1);*/
 }
 
 h3 {
@@ -126,7 +127,8 @@ PAGE:PORTFOLIO
 
 #gallery li {
 	/*float: left;*/
-	width: 45%;
+	width: 60%;
+  /*width 45*/
 	margin: 2.5%;
 	background-color: #f5f5f5;
 	color: #bdc3c7;
@@ -149,6 +151,10 @@ PAGE:PORTFOLIO
 /********************
 PAGE:ABOUT
 ********************/
+.main-title {
+    text-align: center;
+    color: #757575;
+}
 
 .profile-photo {
 	display: block;
@@ -160,7 +166,7 @@ PAGE:ABOUT
 .profile-heading {
 	background: linear-gradiant(#f4a4b2, transparent 90%),
                 #f4a4b2 url('img/designs.jpg') no-repeat center;
-    margin: 0 auto 30px;
+    margin: 0 auto 10px;
     background-size: cover;
 
 }
@@ -271,37 +277,57 @@ nav a.selected, nav a:hover {
 
 /* Medium screens */
 @media all and (max-width: 800px) {
- #gallery li{
-    /* 当在中等屏幕中, 导航项目居中显示，并且剩余空间平均分布在列表之间 */
+  #gallery li {
     justify-content: space-around;
+    /*justify-content: flex-end;*/
+
   }
 }
 
 /* Small screens */
-@media all and (max-width: 500px) {
+@media screen and (max-width: 479px) {
  #gallery li{
     /* 在小屏幕下, 我们没有足够空间行排列，但我们可以换成列排列 */
+
+    display: flex;
     flex-direction: column;
+    /*position: relative;*/
+    justify-content: flex-end;
+    width: 100%;
   }
 }
 
 
 /** 覆盖层 Light BOX **/
 #overlay {
+  /*background:rgba(0,0,0,0.7);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top:10;
+  left:10;
+  right:10;
+  bottom:10;
+  display: flex;
+  text-align:center;*/
   background:rgba(0,0,0,0.7);
-  width:100vw;
-  height:100vh;
-  /*position:absolute; */
-  position:fixed;
-  top:0;
-  left:0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  top: 0px;
+  left: 0px;
+  z-index: 10001;
   display:none;
-  text-align:center;
+  /*filter:alpha(opacity=60);*/
+  background-color: #777;
+  -moz-opacity: 0.5;
 }
 
 #overlay img {
- margin-top: 8%;
+ margin-top: 6%;
  height: 85vh;
+ width: auto;
 }
 
 #overlay p {
@@ -313,7 +339,7 @@ nav a.selected, nav a:hover {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
 	.main-header,
 	.row,
   .footer-inner{
@@ -324,4 +350,8 @@ nav a.selected, nav a:hover {
 	.tagline {
 		font-size: 1.4em;
 	}
+  #gallery li {
+    justify-content: space-around;
+    width: 28.33333%;
+  }
 }
